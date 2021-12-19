@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #0b013c;
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+.header-container {
+    position: relative;
+    height: 100%;
+    margin: auto;
+    width: 1024px;
+}
+
+.header-container img {
+    position: absolute;
+    height: 100%;
+
+    right: 0;
+
+}
+
+.top-content {
+    position: absolute;
+    color: #fff;
+
+    min-height: 350px;
+    top: 30%;
+}
+
+.top-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-content h5 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 20px 0 0;
+}
+
+.top-content p {
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 150px 0 0;
+}
+
+.input-form {
+    margin: 20px 0 0 0;
+    width: 100%;
+    display: flex;
+}
+
+.input-form .email-box {
+    padding: 10px 12px;
+    width: auto;
+    border: none;
+
+
+    background: #fff;
+}
+
+.input-form .submit-email {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background: #f8cb8a;
+    border: none;
+    color: #111111;
+    cursor: pointer;
+
+}
+
+.input-form .submit-email:hover {
+    background: #f6bb66;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 100vh;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    .header-container img {}
+
+    .top-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .top-content p {
+        margin: 20px 30px 0 0;
+    }
+
+    .input-form .email-box {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .header {
+        height: 644px;
+        width: 100%;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .top-content {
+        width: 450px;
+        margin: auto;
+    }
+
+    .top-content p {
+        margin: 20px 30px 0 0;
+    }
+
+    .input-form .email-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .header-container {
+        display: flex;
+        justify-content: start;
+        padding-left: 40px;
+        width: 1024px;
+    }
+}
+
+/* @media only screen and (min-width: 1200px) {
+    .header-container{
+        width: 1024px;
+    }
+} */
